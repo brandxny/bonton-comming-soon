@@ -80,6 +80,8 @@ typings/
 .env
 .env.test
 dw.json
+id_rsa_work_user1
+id_rsa_work_user1.pub
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
