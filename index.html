@@ -1,24 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  	<meta name="viewport" content="width=device-width" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
   
-  	<title>Bonton Coming Soon</title>
-	<meta name="description" content="Bo Ton The store you know and love is coming back - bigger and better than ever">
-
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  	<link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon_Primary_Icon_Flower_Red.png?v=1625744650" type="image/png">
+  <title>Bonton Coming Soon</title>
+  
+  <link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/coming-soon.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon_Primary_Icon_Flower_Red.png?v=1625744650" type="image/png">
     
-	<!--     Fonts     -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
+  <!--     Fonts     -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
   
   <style>
 /* ================ */
@@ -41,7 +39,8 @@ img{
 /* ================ */
 /*		GENERAL		*/
 /* ================ */
-/* body > div{
+body,
+div.bx-full-screen-wrap{
 	display: -webkit-box;
 	display: -moz-box;
 	display: -webkit-flex;
@@ -49,7 +48,7 @@ img{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-} */
+}
 figure{
 	margin:0;
 }
@@ -66,7 +65,7 @@ p.coming-soon{
 h1{
 	font-weight: lighter;
 	font-weight: 100;
-	font-size: 2.3em;
+	font-size: 3.3em;
     margin: 0.5em 0;
     line-height: 1;
 }
@@ -81,9 +80,6 @@ p.sub-copy{
 	background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px){
-	.container-fluid{
-		padding: 15px;
-	}
 	.bx-break-on-desktop{
 		display: block;
 	}
@@ -91,13 +87,13 @@ p.sub-copy{
 		overflow: auto;
 		font-size: 1vw;
 	}
-	/* .bx-component-two-columns > div{
+	.bx-component-two-columns > div{
 		float: left;
 	}
 	.bx-component-two-columns > div:nth-of-type(1){
 		width: 34%;
     	padding: 2% 0 0 2%;
-	} */
+	}
 	.bx-component-two-columns > div:nth-of-type(2){
 		display: -webkit-box;
 	    display: -moz-box;
@@ -106,6 +102,8 @@ p.sub-copy{
 	    display: flex;
 	    align-items: center;
 	    justify-content: flex-start;
+		width:63%;
+		padding: 13.5vw 0;
 		height: 100%;
 	}
 	.bx-component-two-columns > div:nth-of-type(2) > div{
@@ -118,7 +116,7 @@ p.sub-copy{
 		font-size: 1em;
 	}
 	.bx-component-two-columns > div:nth-of-type(2){
-		padding: 9.2em 0;
+		padding: 11.5em 0;
 	}
 
 }
@@ -147,9 +145,9 @@ p.sub-copy{
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="container-fluid">
-	<section class="row bx-component bx-component-two-columns bx-component-two-columns-12">
-		<div class="col-md-4">
+<div class="bx-full-screen-wrap">
+	<section class="bx-component bx-component-two-columns bx-component-two-columns-12">
+		<div>
 			<figure class="w3-content w3-section">
 			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-mcqdekjvq7/product_images/uploaded_images/little-girl-blue-dress-modeling.jpg?t=1637903865&_gl=1*b5578j*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTYzNzkwMDQwOS4xLjEuMTYzNzkwMzg4My42MA">
 			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-mcqdekjvq7/product_images/uploaded_images/men-in-jacket-pointing.jpg?t=1637903866&_gl=1*b5578j*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTYzNzkwMDQwOS4xLjEuMTYzNzkwMzg4My42MA">
@@ -159,12 +157,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</figure>
 			<figure><img src="https://cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon-logo_480x480.png?v=1637694675" alt="BON-TON logo" /></figure>
 		</div>
-		<div class="col-md-8">
+		<div>
 			<div>
 				<div>
 					<p class="coming-soon">COMING SOON!</p>
 					<h1>
-						BON TON, the store you know 
+						The store you know 
 						<span class="bx-break-on-desktop">and love is coming back - <span>
 						<span class="bx-break-on-desktop">bigger and better than ever!</span>
 					</h1>
@@ -176,84 +174,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div>
 					<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=U6mqQh"></script>
 					<div class="klaviyo-form-QUybud"></div>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</section>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="bx-brands">
-			<h2>The Brands you Love: Here are some of the brands that we will find:</h2>
-			<p class="sub-copy-list">						
-				1822 Denim • 24/7 Apparel • 5th Avenue Lux • Adrienne Vittadini • Aerosoles • Alexia Admor • After Six • Alfred Sung, Dessy Collection • American Fitness Couture • Amelia Rose • Anne Klein • Argent • 
-				Ava James • Beautyrest • BergHOFF • BioPEDIC • Bandolino • Baretraps • BCBG • Blue Ridge Home • Bobeau • Bordallo Pinheiro • Brooklyn Loom • Breckenridge • Charisma • Dr2 • Dayleen • Deer Stags • Erbario Toscano •
-				Casa Bugatti • Chef Specialties • Clarks USA • COIN 1804 • Commercial Chef • Chroma • Cottage Classics • Daniel K • Dessy • Design District • Dominique • Donna Rico • Dora Landa • Down Decor • Easy Spirit • EcoPEDIC • Ellen Tracy • Enchante Home • Fiesta (Tablewear) • Figueroa & Flower •
-				Frye • Gemesis Jewels • Galaxy by Harvic • Ginkgo • Gottex • Gottex Studio • Grosche • Holland Bowl Mill • H Halston • iCollection • Joan & David • Julia Jordan • Kaktus • Karen Kane • Kate Spade (HOME) • Kenneth Cole • Kraftware • Kosta Boda • LAV • La Regale • Lavish • Lenox • Living Quarters • Lola Jeans •
-				London Times • Maggy London • Marc Fisher • Marilyn Schiff • Mepra • Mikasa • Nambe • Nina Leonard • Nine West • NY Collection • Nude Glass • Oceanfront Resort • ONE WORLD • Oneida • Patrizia • Poetic Justice • Pointehaven • Portmeiron • 
-				Orrefors • Profile by Gottex • Propet • Peppermill Imports • Pur & Calm • Pimpernel • Portus Cale • Robbie Bee • Q Squared • Qualia Glass • R&M Richards • Reed & Barton • Restonic • Rockport • SensorPEDIC • Serta • Skandia • Spode • Spyder • Sterling Forever • Studio One •
-				Salisbury Pewter • Studio Works • The Pink Reef • Timberland • Timex • Tomodachi • True Religion • Truly Calm • Truly Soft • Weatherproof • White mark • Zac & Rachel • Amefa • Bormioli • Vietri
-			</p>
-		</div>
-	</div>		
-	<div class="row">
-		<h2>Items you are looking for: Here are some of the categories we will be featuring:</h2>
-		<div class="col-3 bx-categories">
-			<p class="sub-copy-list">
-				<ul>
-					<li>For Women:</li>
-					<li>Women's Activewear</li>
-					<li>Women's Coats & Jackets</li>
-					<li>Dresses</li>
-					<li>Women's Hoodies & Sweatshirts</li>
-					<li>Women's Blazers</li>
-					<li>Women's Jeans</li>
-					<li>Women's Loungewear</li>
-					<li>Women's Pajamas & Robes</li>
-					<li>Women's Pants</li>
-					<li>Women's Shorts</li>
-					<li>Women's Skirts</li>
-					<li>Sports Fan Shop for Women</li>
-					<li>Women's Suits</li>
-					<li>Women's Sustainable Clothing</li>
-					<li>Women's Swim</li>
-					<li>Women's Tights, Pantyhose, Socks & Hosiery </li>
-					<li>Women's Tops</li>
-					<li>Panties & Underwear</li>
-					<li>Women's Lingerie</li>
-					<li>Slips & Shapewear for Women</li>
-					<li>Women's Bodysuits</li>
-					<li>Nursing & Maternity Intimates</li>
-					<li>Bras & Bralettes</li>
-				</ul>
-			</p>
-		</div>
-		<div class="col-3 bx-categories">
-			<p class="sub-copy-list">
-				<ul>
-					<li>For Men:</li>
-					<li>Women's Activewear</li>
-					<li>Women's Coats & Jackets</li>
-					<li>Dresses</li>
-					<li>Women's Hoodies & Sweatshirts</li>
-					<li>Women's Blazers</li>
-					<li>Women's Jeans</li>
-					<li>Women's Loungewear</li>
-					<li>Women's Pajamas & Robes</li>
-					<li>Women's Pants</li>
-					<li>Women's Shorts</li>
-					<li>Women's Skirts</li>
-					<li>Sports Fan Shop for Women</li>
-					<li>Women's Suits</li>
-					<li>Women's Sustainable Clothing</li>
-					<li>Women's Swim</li>
-					<li>Women's Tights, Pantyhose, Socks & Hosiery </li>
-					<li>Women's Tops</li>
-				</ul>
-			</p>
-		</div>		
-	</div>
 </div>
 
 <script>
