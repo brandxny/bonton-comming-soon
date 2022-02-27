@@ -20,7 +20,50 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
   
-  <style>
+<style>
+/* ==================== */
+/*	 ICONS ANIMATION	*/
+/* ==================== */
+.bx-icon-1{
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    width: 19%;
+    z-index: -1;
+}
+.bx-icon{
+    position: absolute;
+    width: 19%;
+    z-index: -1;
+}
+.bx-icon-2{
+    left: 21%;
+    top: -71%;
+}
+.bx-icon-1 .bx-floating {  
+    background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon-1.png?t=1645939971&_gl=1*un92wk*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
+}
+.bx-icon-2 .bx-floating {  
+    background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon.png?t=1645938251&_gl=1*13ytnhw*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
+}
+.bx-floating {
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    padding-top: calc((415% / 445) * 100);	
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate;
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 6.6px); }
+    to   { transform: translate(0, -0px); }    
+}
+
 /* ================ */
 /*		DEFAULT		*/
 /* ================ */
@@ -33,6 +76,9 @@ div.Bar,
 	display: none !important;
 	opacity: 0;
 	height: 0;
+}
+.container{
+	position: relative;
 }
 img{
 	width: 100%;
@@ -74,11 +120,6 @@ p.sub-copy{
 	font-weight: normal;
 	font-weight: 500;
 	font-size: 1.5em;
-}
-.bx-component-two-columns > div:nth-of-type(2){
-	background: url('https://cdn11.bigcommerce.com/s-mcqdekjvq7/product_images/uploaded_images/background.png?t=1637904998&_gl=1*bgv71j*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTYzNzkwMDQwOS4xLjEuMTYzNzkwNTAwNS40NQ');
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .bx-brands{
 	margin: 0 auto;
@@ -147,10 +188,15 @@ p.sub-copy{
 </head>
 
 <body>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDM4B59"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div class="bx-icon bx-icon-1">
+	<figure class="bx-floating"></figure>
+</div>
 
 <div class="container-fluid">
 	<section class="row bx-component bx-component-two-columns bx-component-two-columns-12">
@@ -192,6 +238,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <div class="container">
+
+	<div class="bx-icon bx-icon-2">
+		<figure class="bx-floating"></figure>
+	</div>
+
 	<div class="row">
 		<div class="bx-brands">
 			<h2>Here are just some of the brands that we will feature:</h2>
