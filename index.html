@@ -42,16 +42,17 @@
 }
 .bx-icon-1 .bx-floating {  
     background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon-1.png?t=1645939971&_gl=1*un92wk*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
+	animation-duration: 4s;
 }
 .bx-icon-2 .bx-floating {  
     background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon.png?t=1645938251&_gl=1*13ytnhw*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
+	animation-duration: 3.3s;
 }
 .bx-floating {
     background-size: 100% !important;
     background-repeat: no-repeat;
     padding-top: calc((415% / 445) * 100);	
     animation-name: floating;
-    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction:alternate;
@@ -60,7 +61,7 @@
 
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 6.6px); }
+    65%  { transform: translate(0, 5.3px); }
     to   { transform: translate(0, -0px); }    
 }
 
@@ -77,7 +78,8 @@ div.Bar,
 	opacity: 0;
 	height: 0;
 }
-.container{
+.container,
+.container-fluid{
 	position: relative;
 }
 img{
@@ -102,11 +104,14 @@ figure{
 p,h1{
 	font-family: 'Inter', sans-serif;
 }
-p.coming-soon{
+p.coming-soon,
+h2{
 	color: #ff1715;
 	font-weight: normal;
 	font-weight: 500;
 	font-size: 2em;
+}
+p.coming-soon{
 	margin: 0;
 }
 h1{
@@ -194,11 +199,12 @@ p.sub-copy{
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="bx-icon bx-icon-1">
-	<figure class="bx-floating"></figure>
-</div>
-
 <div class="container-fluid">
+
+	<div class="bx-icon bx-icon-1">
+		<figure class="bx-floating"></figure>
+	</div>
+
 	<section class="row bx-component bx-component-two-columns bx-component-two-columns-12">
 		<div class="col-md-4">
 			<figure class="w3-content w3-section">
