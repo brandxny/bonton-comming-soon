@@ -1,331 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-  	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  	<meta name="viewport" content="width=device-width" />
-  
-  	<title>Bonton Coming Soon</title>
-	<meta name="description" content="Bo Ton The store you know and love is coming back - bigger and better than ever">
-
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  	<link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon_Primary_Icon_Flower_Red.png?v=1625744650" type="image/png">
-    
-	<!--     Fonts     -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
-  
-<style>
-/* ==================== */
-/*	 ICONS ANIMATION	*/
-/* ==================== */
-.bx-icon-1{
-    position: absolute;
-    right: 4%;
-    top: 6%;
-    width: 19%;
-    z-index: -1;
-}
-.bx-icon{
-    position: absolute;
-    width: 19%;
-    z-index: -1;
-}
-.bx-icon-2{
-    left: 26%;
-    bottom: 0;
-}
-.bx-icon-1-mob,
-.bx-icon-2-mob{
-	display: none;
-}
-
-.bx-icon-1 .bx-floating,
-.bx-icon-2-mob .bx-floating{
-    background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon-1.png?t=1645939971&_gl=1*un92wk*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
-	animation-duration: 4s;
-}
-.bx-icon-2 .bx-floating,
-.bx-icon-1-mob .bx-floating{  
-    background: url(https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/icon.png?t=1645938251&_gl=1*13ytnhw*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTkzODE5Ni4xNjEuMS4xNjQ1OTM4MjgxLjU2);
-	animation-duration: 3.3s;
-}
-.bx-floating {
-    background-size: 100% !important;
-    background-repeat: no-repeat;
-    padding-top: calc((415% / 445) * 100);	
-    animation-name: floating;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction:alternate;
-}
-
-
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 5.3px); }
-    to   { transform: translate(0, -0px); }    
-}
-
-/* ================ */
-/*		DEFAULT		*/
-/* ================ */
-html,body,div,form,fieldset,legend,label{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}th,td{text-align:left;vertical-align:top;}h1,h2,h3,h4,h5,h6,th,td,caption{font-weight:normal;}img{border:0;}
-body{
-	margin: 0;
-}
-div.Bar,
-.Block.Moveable{
-	display: none !important;
-	opacity: 0;
-	height: 0;
-}
-.container,
-.container-fluid{
-	position: relative;
-}
-img{
-	width: 100%;
-	max-width: 100%;
-}
-/* ================ */
-/*		GENERAL		*/
-/* ================ */
-/* body > div{
-	display: -webkit-box;
-	display: -moz-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
-figure{
-	margin:0;
-}
-p,h1{
-	font-family: 'Inter', sans-serif;
-}
-p.coming-soon,
-h2{
-	color: #ff1715;
-	font-weight: normal;
-	font-weight: 500;
-	font-size: 2em;
-}
-p.coming-soon{
-	margin: 0;
-}
-h1{
-	font-weight: lighter;
-	font-weight: 100;
-	font-size: 3.3em;
-    margin: 0.5em 0;
-    line-height: 1;
-}
-p.sub-copy{
-	font-weight: normal;
-	font-weight: 500;
-	font-size: 1.5em;
-}
-.bx-brands{
-	margin: 0 auto;
-    font-size: 0.79em;
-    line-height: 2;
-}
-@media screen and (min-width: 768px){
-	.container-fluid{
-		padding: 15px;
-	}
-	.bx-break-on-desktop{
-		display: block;
-	}
-	.bx-component-two-columns{
-		overflow: auto;
-		font-size: 1vw;
-	}
-	/* .bx-component-two-columns > div{
-		float: left;
-	}
-	.bx-component-two-columns > div:nth-of-type(1){
-		width: 34%;
-    	padding: 2% 0 0 2%;
-	} */
-	.bx-component-two-columns > div:nth-of-type(2){
-		display: -webkit-box;
-	    display: -moz-box;
-	    display: -webkit-flex;
-	    display: -ms-flexbox;
-	    display: flex;
-	    align-items: center;
-	    justify-content: flex-start;
-		height: 100%;
-	}
-	.bx-component-two-columns > div:nth-of-type(2) > div{
-		padding: 0 4em;
-		margin: 2em 0 0;
-	}
-}
-@media screen and (min-width: 1200px){
-	.bx-component-two-columns{
-		font-size: 1em;
-	}
-	.bx-component-two-columns > div:nth-of-type(2){
-		padding: 9.2em 0;
-	}
-
-}
-@media screen and (max-width: 780px){
-	.bx-component-two-columns > div:nth-of-type(2) > div{
-		padding: 2em 0em;
-    	font-size: 1em;
-    	background: #ffffffb0;
-    }
-	.bx-icon{
-    	width: 36%;
-	}
-	.bx-icon-1{
-		top:50em;	
-	}
-	.bx-icon-1-mob,
-	.bx-icon-2-mob{
-		display: block;
-		opacity: 0.4;
-	}
-	.bx-icon-1-mob{
-		bottom: 8em;
-    	left: 2em;	
-	}
-	.bx-icon-2-mob{
-	    bottom: 34em;
-    	right: 3em;
-	}	
-	.bx-icon-2 {
-    	left: 10%;
-    	bottom: 30em;
-	}	
-}
-</style>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-PDM4B59');</script>
-	<!-- End Google Tag Manager -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandX</title>
+    <link href="css/brandx-style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon_Primary_Icon_Flower_Red.png?v=1625744650" type="image/png">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W2NHHBJ');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDM4B59"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NHHBJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="container-fluid">
+    
+<div class="bx-header-holder">
+    <header class="header">
+      
+      <div class="bx-search-mobile" style="display: block;">
+        <a rel="nofollow">
+          <i class="icon_search"></i>
+        </a>
+      </div>
+      
+    <nav class="bx-header-nav">
+        <div class="bx-header-nav__inner">
+            <ul class="header-menu-list">
+            <li class="header-menu-item">
+                <a href="https://bergners.com/">Bergners</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="https://bonton.com/">Bonton</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="https://bostonstore.com/">Boston Store</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="https://carsons.com/">Carsons</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="https://elder-beerman.com/">Elder-Beerman</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="http://goodysdeptstores.com/">Goodys</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="http://gordmans.com/">Gordmans</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="https://herbergers.com/">Herbergers</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="http://palaisroyal.com/">Palais Royal</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="http://peebles.com/">Peebles</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="http://stagestores.com/">Stage Store</a>
+            </li>            
+            <li class="header-menu-item">
+                <a href="https://younkers.com/">Younkers</a>
+            </li>
+            <li class="header-menu-item">
+                <a href="/pages/contact-us.html">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+      
+      <a href="https://brandx.com/" class="bx-logo"></a>
+      
+      <a hidden href="#" class="bx-device-menu" style="display:none">
+        <div class="bx-device-menu__inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </header>
+  </div>
+  
+  
 
-	<div class="bx-icon bx-icon-1">
-		<figure class="bx-floating"></figure>
-	</div>
-
-	<section class="row bx-component bx-component-two-columns bx-component-two-columns-12">
-		<div class="col-md-4">
-			<figure class="w3-content w3-section">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/women-wearing-coats-sweater.jpg?t=1645810459&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/women-wearing-denim-jacket.jpg?t=1645810459&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/all-for-your-home.jpg?t=1645810458&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/denim-jacket-men.jpg?t=1645810457&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/sofa-furniture.jpg?t=1645810458&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			  <img class="mySlides" src="https://cdn11.bigcommerce.com/s-fymac37tn1/product_images/uploaded_images/kids-modeling-cloths.jpg?t=1645810457&_gl=1*uqx86h*_ga*Mzg4MjE1NzU3LjE2Mzc5MDA0MTA.*_ga_WS2VZYPC6G*MTY0NTgwOTAxNy4xNTkuMS4xNjQ1ODEwNDgwLjYw">
-			</figure>
-			<figure><img src="https://cdn.shopify.com/s/files/1/0556/9150/9911/files/BonTon-logo_480x480.png?v=1637694675" alt="BON TON" /></figure>
-		</div>
-		<div class="col-md-8">
-			<div>
-				<div>
-					<p class="coming-soon">COMING SOON!</p>
-					<h1>
-						The Bon Ton you know
-						<span class="bx-break-on-desktop">and love is coming back - <span>
-						<span class="bx-break-on-desktop">bigger and better than ever!</span>
-					</h1>
-					<!-- <p class="sub-copy-1">
-						All your favorite brands, all in one spot: Bandolino, Nine West, Lenox, Karen Kane, True Religion, Portmeirion, Rockport, and more.
-					</p> -->
-					<p class="sub-copy">
-						Get on our insider email list and get an 
-						<span class="bx-break-on-desktop">exclusive 20% off coupon!</span>
-					</p>
-				</div>
-				<div>
-					<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=U6mqQh"></script>
-					<div class="klaviyo-form-QUybud"></div>
-				</div>	
-			</div>
-		</div>
-	</section>
-	
-	<!-- <div class="bx-icon bx-icon-2">
-		<figure class="bx-floating"></figure>
-	</div> -->
-
-</div>
-
-<!-- <div class="container">
-
-	<div class="bx-icon bx-icon-2">
-		<figure class="bx-floating"></figure>
-	</div>
-
-	<div class="row">
-		<div class="bx-brands">
-			<h2>Here are just some of the brands that we will feature:</h2>
-			<p class="sub-copy-list">						
-				1822 Denim • 24/7 Apparel • 5th Avenue Lux • Adrienne Vittadini • Aerosoles • Alexia Admor • After Six • Alfred Sung, Dessy Collection • American Fitness Couture • Amelia Rose • Anne Klein • Argent • 
-				Ava James • Beautyrest • BergHOFF • BioPEDIC • Bandolino • Baretraps • BCBG • Blue Ridge Home • Bobeau • Bordallo Pinheiro • Brooklyn Loom • Breckenridge • Charisma • Dr2 • Dayleen • Deer Stags • Erbario Toscano •
-				Casa Bugatti • Chef Specialties • Clarks USA • COIN 1804 • Commercial Chef • Chroma • Cottage Classics • Daniel K • Dessy • Design District • Dominique • Donna Rico • Dora Landa • Down Decor • Easy Spirit • EcoPEDIC • Ellen Tracy • Enchante Home • Fiesta (Tablewear) • Figueroa & Flower •
-				Frye • Gemesis Jewels • Galaxy by Harvic • Ginkgo • Gottex • Gottex Studio • Grosche • Holland Bowl Mill • H Halston • iCollection • Joan & David • Julia Jordan • Kaktus • Karen Kane • Kate Spade (HOME) • Kenneth Cole • Kraftware • Kosta Boda • LAV • La Regale • Lavish • Lenox • Living Quarters • Lola Jeans •
-				London Times • Maggy London • Marc Fisher • Marilyn Schiff • Mepra • Mikasa • Nambe • Nina Leonard • Nine West • NY Collection • Nude Glass • Oceanfront Resort • ONE WORLD • Oneida • Patrizia • Poetic Justice • Pointehaven • Portmeirion • 
-				Orrefors • Profile by Gottex • Propet • Peppermill Imports • Pur & Calm • Pimpernel • Portus Cale • Robbie Bee • Q Squared • Qualia Glass • R&M Richards • Reed & Barton • Restonic • Rockport • SensorPEDIC • Serta • Skandia • Spode • Spyder • Sterling Forever • Studio One •
-				Salisbury Pewter • Studio Works • The Pink Reef • Timberland • Timex • Tomodachi • True Religion • Truly Calm • Truly Soft • Weatherproof • White mark • Zac & Rachel • Amefa • Bormioli • Vietri • <b>and many more...</b>
-			</p>
-		</div>
-	</div>
-
-	<div class="bx-icon bx-icon-1-mob">
-		<figure class="bx-floating"></figure>
-	</div>
-
-	<div class="bx-icon bx-icon-2-mob">
-		<figure class="bx-floating"></figure>
-	</div>
-
-</div> -->
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
+  
+    <div class="loader" id="loader" hidden>
+        loading...
+    </div>
+    <div class="img-container">
+        <div class="image-containerLeft" id="image-containerLeft"></div>
+        <div class="image-containerCenter" id="image-containerCenter"></div>
+        <div class="image-containerRight" id="image-containerRight"></div>
+        <div class="image-container-mobile" id="image-container-mobile" ></div>
+    </div>
+    <div class="klaviyo-form-U6mqQh"></div>
+    <!-- Script -->
+    <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=U6mqQh"></script>
+    <script src="js/brandx-script.js"></script>
+    <script src="js/brandx-script-header.js"></script>    
 </body>
-
 </html>
