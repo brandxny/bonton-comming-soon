@@ -261,5 +261,8 @@ h1 {
   img[title="woman in blue tube dress standing beside white curtain"] {
     display: none !important;
   }
+  img[title="woman in blue tube dress standing beside white curtain"] + figcaption{ 
+    display:none !important; 
+  }
     
 
