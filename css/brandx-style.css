@@ -258,3 +258,6 @@ h1 {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+  img[src=https://images.unsplash.com/photo-1583778477928-531a25a0baf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw1ODg5MHwwfDF8cmFuZG9tfHx8fHx8fHx8MTY2MTM2NDMzOQ&ixlib=rb-1.2.1&q=80&w=1080]{
+    display:none !important;
+  }
